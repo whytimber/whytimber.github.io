@@ -335,9 +335,10 @@ _这是文字_      斜体
 <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571904129083&di=b1ff3e56e4b5fa9ada03c31d162b5d29&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F91529822720e0cf3bde5ab8f0c46f21fbe09aab0.jpg" alt="插入网络图"></p>
 </blockquote>
 <h3 id="3-2-插入文本链接"><a href="#3-2-插入文本链接" class="headerlink" title="3.2 插入文本链接"></a>3.2 插入文本链接</h3><p>使用:</p>
-<pre><code>&lt;https://baidu.com&gt;</code></pre><p>效果:</p>
+<pre><code>&lt;https://whytimber.github.io&gt;
+&lt;whytimber@163.com&gt;</code></pre><p>效果:</p>
 <blockquote>
-<p>   <a href="https://baidu.com" target="_blank" rel="noopener">https://baidu.com</a></p>
+<p>   <a href="https://whytimber.github.io">https://whytimber.github.io</a><br>   <a href="mailto:&#119;&#104;&#121;&#x74;&#x69;&#109;&#x62;&#x65;&#114;&#x40;&#x31;&#x36;&#51;&#x2e;&#x63;&#x6f;&#x6d;" target="_blank" rel="noopener">&#119;&#104;&#121;&#x74;&#x69;&#109;&#x62;&#x65;&#114;&#x40;&#x31;&#x36;&#51;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
 </blockquote>
 <h2 id="4-分割线"><a href="#4-分割线" class="headerlink" title="4 分割线"></a>4 分割线</h2><p>使用:一行中有三个以上的星号(*)、减号(-)、下划线(_)简历一个分割线，行内不能有其他内容</p>
 <pre><code>***
@@ -347,6 +348,124 @@ ___</code></pre><p>效果:</p>
 <hr>
 <hr>
 <hr>
+</blockquote>
+<h2 id="5-代码块"><a href="#5-代码块" class="headerlink" title="5 代码块"></a>5 代码块</h2><h3 id="5-1-代码块：缩进-4-个空格或是-1-个制表符"><a href="#5-1-代码块：缩进-4-个空格或是-1-个制表符" class="headerlink" title="5.1 代码块：缩进 4 个空格或是 1 个制表符"></a>5.1 代码块：缩进 4 个空格或是 1 个制表符</h3><p>效果:</p>
+<pre><code>#include &lt;stdio.h&gt;
+int main(void) {
+    printf(&quot;hello world\n&quot;);
+}</code></pre><h3 id="5-2-行内式：如果一个行内引用代码，只需要用反引号-包裹"><a href="#5-2-行内式：如果一个行内引用代码，只需要用反引号-包裹" class="headerlink" title="5.2 行内式：如果一个行内引用代码，只需要用反引号(`)包裹"></a>5.2 行内式：如果一个行内引用代码，只需要用反引号(`)包裹</h3><p>使用:</p>
+<pre><code>这是一个行内引用式`引用部分`</code></pre><p>效果:</p>
+<blockquote>
+<p>这是一个行内引用式<code>引用部分</code></p>
+</blockquote>
+<h3 id="5-3-多行代码块与语法高亮：在需要高亮的代码块前一行后一行使用三个反引号-包裹起来"><a href="#5-3-多行代码块与语法高亮：在需要高亮的代码块前一行后一行使用三个反引号-包裹起来" class="headerlink" title="5.3 多行代码块与语法高亮：在需要高亮的代码块前一行后一行使用三个反引号(`)包裹起来"></a>5.3 多行代码块与语法高亮：在需要高亮的代码块前一行后一行使用三个反引号(`)包裹起来</h3><p>使用:</p>
+<pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class Demo &#123;</span><br><span class="line">    public static void test() &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></code></pre><p>效果:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class Demo &#123;</span><br><span class="line">    public static void test() &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-引用"><a href="#6-引用" class="headerlink" title="6 引用"></a>6 引用</h2><h3 id="6-1-基本使用-在被引用文本前增加一个大于号-gt"><a href="#6-1-基本使用-在被引用文本前增加一个大于号-gt" class="headerlink" title="6.1 基本使用:在被引用文本前增加一个大于号(&gt;)"></a>6.1 基本使用:在被引用文本前增加一个大于号(&gt;)</h3><p>使用:</p>
+<pre><code>&gt; 引用的文本1
+&gt; 引用的文本2
+&gt; 引用的文本3</code></pre><p>效果:</p>
+<blockquote>
+<p>引用的文本1<br>引用的文本2<br>引用的文本3</p>
+</blockquote>
+<h3 id="6-2-嵌套使用-在被引用文本前增加多个大于号-gt"><a href="#6-2-嵌套使用-在被引用文本前增加多个大于号-gt" class="headerlink" title="6.2 嵌套使用:在被引用文本前增加多个大于号(&gt;)"></a>6.2 嵌套使用:在被引用文本前增加多个大于号(&gt;)</h3><p>使用:</p>
+<pre><code>&gt; 引用的文本1
+&gt;&gt; 引用的文本2
+&gt;&gt;&gt; 引用的文本3</code></pre><p>效果:</p>
+<blockquote>
+<p>引用的文本1</p>
+<blockquote>
+<p>引用的文本2</p>
+<blockquote>
+<p>引用的文本3</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="7-列表"><a href="#7-列表" class="headerlink" title="7 列表"></a>7 列表</h2><h3 id="7-1-无序列表-使用星号-加号-减号-表示-与文本间有空格"><a href="#7-1-无序列表-使用星号-加号-减号-表示-与文本间有空格" class="headerlink" title="7.1 无序列表:使用星号(*),加号(+),减号(-)表示,与文本间有空格"></a>7.1 无序列表:使用星号(*),加号(+),减号(-)表示,与文本间有空格</h3><p>使用:</p>
+<pre><code>* 星号星号1
+* 星号星号2
++ 加号加号1
++ 加号加号2
+- 减号减号1
+- 减号减号2</code></pre><p>效果:</p>
+<blockquote>
+<ul>
+<li>星号星号1</li>
+<li>星号星号2</li>
+</ul>
+<ul>
+<li>加号加号1</li>
+<li>加号加号2</li>
+</ul>
+<ul>
+<li>减号减号1</li>
+<li>减号减号2</li>
+</ul>
+</blockquote>
+<h3 id="7-2-有序列表-使用数字级点-表示-与文本间有空格"><a href="#7-2-有序列表-使用数字级点-表示-与文本间有空格" class="headerlink" title="7.2 有序列表:使用数字级点(.)表示,与文本间有空格"></a>7.2 有序列表:使用数字级点(.)表示,与文本间有空格</h3><p>使用:</p>
+<pre><code>1. 我是1
+2. 我是2
+3. 我是3</code></pre><p>效果:</p>
+<blockquote>
+<ol>
+<li>我是1</li>
+<li>我是2</li>
+<li>我是3</li>
+</ol>
+</blockquote>
+<h3 id="7-3-混合列表"><a href="#7-3-混合列表" class="headerlink" title="7.3 混合列表"></a>7.3 混合列表</h3><p>使用:</p>
+<pre><code>* 星号星号1
+* 星号星号2
+1. 我是1
+2. 我是2
+- 减号减号1
+- 减号减号2</code></pre><p>效果:</p>
+<blockquote>
+<ul>
+<li>星号星号1</li>
+<li>星号星号2</li>
+</ul>
+<ol>
+<li>我是1</li>
+<li>我是2</li>
+</ol>
+<ul>
+<li>减号减号1</li>
+<li>减号减号2</li>
+</ul>
+</blockquote>
+<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8 表格"></a>8 表格</h2><p>使用:</p>
+<pre><code>学号|姓名|分数
+:-:|:-:|:-:
+001|小明|99
+002|小红|66
+003｜数据｜100</code></pre><p>效果:</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">学号</th>
+<th align="center">姓名</th>
+<th align="center">分数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">001</td>
+<td align="center">小明</td>
+<td align="center">99</td>
+</tr>
+<tr>
+<td align="center">002</td>
+<td align="center">小红</td>
+<td align="center">66</td>
+</tr>
+<tr>
+<td align="center">003</td>
+<td align="center">数据</td>
+<td align="center">100</td>
+</tr>
+</tbody></table>
 </blockquote>
 
           
